@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Visualizar Tiendas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #F4ECE1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 250px;
+        }
+
+        .menu-btn {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .big-rectangle {
+            width: 800px;
+            height: 400px;
+            background-color: #F7E2DC;
+            border: 2px solid #F7E2DC;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .small-square {
+            width: 300px;
+            height: 300px;
+            background-color: #F7E2DC;
+            border: 2px solid #F7E2DC;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .square-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .menu {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            padding: 5px 0;
+        }
+
+        .menu ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Imagenes/MarketModa.jpg" alt="Logo de Market Moda" class="logo">
+        <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+    </div>
+
+    <div class="container">
+        <h2 class="title">Cupones de descuento</h2>
+        <div class="big-rectangle">
+            <img src="Descuentos/Descuentos.png" alt="Imagen grande" class="rectangle-image">
+        </div>
+        <div style="display: flex;">
+            <div class="small-square">
+                <img src="Descuentos/descuentos 1.png" alt="Imagen 1" class="square-image">
+            </div>
+            <div class="small-square">
+                <img src="Descuentos/descuento 2.png" alt="Imagen 2" class="square-image">
+            </div>
+            <div class="small-square">
+                <img src="Descuentos/descuentos 3.png" alt="Imagen 3" class="square-image">
+            </div>
+            <div class="small-square">
+                <img src="Descuentos/descuentos 4.png" alt="Imagen 4" class="square-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="VisualizarArmario.html">Home</a></li>
+            <li><a href="Seleccionar Diseñador.html">Seleccionar Diseñador</a></li>
+            <li><a href="Diseño.html">Diseña tu estilo</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="Visualizar Cupones.html">Cupomania</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

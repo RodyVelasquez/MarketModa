@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Diseña tu estilo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #F4ECE1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 0 auto; /* Centrar el logo horizontalmente */
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu-button {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .menu:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            background-color: #F7E2DC;
+            border: 2px solid #F7E2DC;
+            border-radius: 50%;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .circle-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Imagenes/MarketModa.jpg" alt="Logo de Market Moda">
+        </div>
+        <div class="menu">
+            <button class="menu-button">Menu</button>
+            <div class="dropdown-content">
+                <li><a href="VisualizarArmario.html">Home</a></li>
+                <li><a href="Seleccionar Diseñador.html">Seleccionar Diseñador</a></li>
+                <li><a href="DiseñaTuEstilo.html">Diseña tu estilo</a></li>
+                <li><a href="Comunidad.html">Compras</a></li>
+                <li><a href="VisualizarCupones.html">Cupomania</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="circle">
+            <img src="Diseñadores/Diseño 1.png" alt="Tipo de prenda">
+            <p>Sofia Cardenas Quispe</p>
+        </div>
+        <div class="circle">
+            <img src="Diseñadores/diseñador 2.png" alt="Color">
+            <p>Maria Paredes Guarniz</p>
+        </div>
+        <div class="circle">
+            <img src="Diseñadores/diseñador 3.png" alt="Medidas">
+            <p>Yul Cardenas Caso</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button">Seleccionar</button>
+    </div>
+</body>
+</html>

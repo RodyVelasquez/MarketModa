@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Bienvenido a Market Moda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #E1D5AB;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .action-btn {
+            margin-top: 20px;
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .action-btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .action-btn-container button {
+            margin: 0 10px;
+        }
+
+        .login-form {
+            margin-top: 30px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        .register-form {
+            margin-top: 30px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .register-input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        .continue-btn {
+            margin-top: 20px;
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Market Moda</h1>
+    <img src="Imagenes/MarketModa.jpg" alt="Imagen de Market Moda" class="image">
+    <div class="action-btn-container">
+        <button class="action-btn" onclick="showLoginForm()">Iniciar sesión</button>
+        <button class="action-btn" onclick="showRegisterForm()">Registrarse</button>
+    </div>
+    
+    <div class="login-form" id="loginForm">
+        <h2>Iniciar sesión</h2>
+        <input type="email" class="login-input" placeholder="Correo electrónico">
+        <input type="password" class="login-input" placeholder="Contraseña">
+        <button class="continue-btn" onclick="window.location.href='VisualizarArmario.html'">Continuar</button>
+    </div>
+
+    <div class="register-form" id="registerForm">
+        <h2>Registrarse</h2>
+        <input type="text" class="register-input" placeholder="Nombres">
+        <input type="text" class="register-input" placeholder="Apellidos">
+        <input type="email" class="register-input" placeholder="Correo electrónico">
+        <input type="password" class="register-input" placeholder="Contraseña">
+        <button class="continue-btn" onclick="window.location.href='VisualizarArmario.html'">Continuar</button>
+    </div>
+
+    <script>
+        function showLoginForm() {
+            var loginForm = document.getElementById("loginForm");
+            var registerForm = document.getElementById("registerForm");
+            loginForm.style.display = "flex";
+            registerForm.style.display = "none";
+        }
+
+        function showRegisterForm() {
+            var loginForm = document.getElementById("loginForm");
+            var registerForm = document.getElementById("registerForm");
+            loginForm.style.display = "none";
+            registerForm.style.display = "flex";
+        }
+    </script>
+</body>
+</html>

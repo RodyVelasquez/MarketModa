@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Visualizar Armario</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F4ECE1;
+        }
+
+        .header {
+            background-color: #F4ECE1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 250px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .circle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            width: 300px;
+        }
+
+        .circle img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        .circle p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .menu-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            padding: 5px 0;
+        }
+
+        .menu ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Imagenes/MarketModa.jpg" alt="Logo de Market Moda" class="logo">
+    </div>
+    
+    <div class="container">
+        <div class="circle">
+            <img src="Ropa/Jean.png" alt="Imagen 1">
+            <p>Jean - Levis - T42 - 2022</p>
+        </div>
+        <div class="circle">
+            <img src="Ropa/Polera.png" alt="Imagen 2">
+            <p>Jersy - Fila - M - 2022</p>
+        </div>
+        <div class="circle">
+            <img src="Ropa/Zapatillas.png" alt="Imagen 3">
+            <p>Zapatos - Nike AirForce One - 44 - 2021</p>
+        </div>
+        <div class="circle">
+            <img src="Ropa/pantalon.png" alt="Imagen 4">
+            <p>Pantalón de traje - Sandro M - 2020</p>
+        </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="VisualizarArmario.html">Home</a></li>
+            <li><a href="Seleccionar Diseñador.html">Seleccionar Diseñador</a></li>
+            <li><a href="Diseño.html">Diseña tu estilo</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="Visualizar Cupones.html">Cupomania</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

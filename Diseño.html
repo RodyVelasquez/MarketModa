@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Diseña tu estilo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #F4ECE1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu-button {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .menu:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .square {
+            width: 300px;
+            height: 300px;
+            background-color: #F7E2DC;
+            border: 2px solid #F7E2DC;
+            border-radius: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .square-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #ff5500;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Imagenes/MarketModa.jpg" alt="Logo de Market Moda" class="logo">
+        <div class="menu">
+            <button class="menu-button">Menu</button>
+            <div class="dropdown-content">
+            <li><a href="VisualizarArmario.html">Home</a></li>
+            <li><a href="Seleccionar Diseñador.html">Seleccionar Diseñador</a></li>
+            <li><a href="DiseñaTuEstilo.html">Diseña tu estilo</a></li>
+            <li><a href="Comunidad.html">Compras</a></li>
+            <li><a href="VisualizarCupones.html">Cupomania</a></li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="square">
+            <h2 class="square-title">Tipo de prenda</h2>
+        </div>
+        <div class="square">
+            <h2 class="square-title">Color</h2>
+        </div>
+        <div class="square">
+            <h2 class="square-title">Medidas</h2>
+        </div>
+        <div class="square">
+            <h2 class="square-title">Sugerencias</h2>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button">Enviar</button>
+    </div>
+</body>
+</html>
